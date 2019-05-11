@@ -1,0 +1,274 @@
+
+body {
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+
+.navbar a {
+	color: grey;
+}
+
+#myNavbar .dropdown-menu a {
+	color: grey;
+	background-color: white;
+}
+
+
+.navbar-header {
+	padding-left: 65px;
+}
+
+.navbar {
+	background-color: #ffff;
+	border:none;
+}
+
+.icon-bar {
+	background-color: #ffff;
+}
+
+@media (max-width: 900px){
+.navbar {
+	background-color: navy;
+	border:none;
+}
+}
+.navbar li {
+	background-color: #ffff;
+}
+
+
+.vizThumb{
+	width: 150px;
+	height: 150px;
+}
+
+.panel {
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+
+.summary {
+	background-color: #ffff;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	padding: 35px;
+	padding-top: 20px;
+}
+
+.landingImage {
+	float:left;
+}
+
+.summaryParagraph, .comparisonText {
+	font-family: Arial;
+	color: #727272;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.visualizations {
+	margin-top: 30px;
+	margin-right: 50px;
+	background-color: #ffff;
+	text-align: center;
+}
+
+.vizAlign {
+	text-align: center;
+}
+
+.vizImages {
+	width: 600px;
+	height: auto;
+}
+
+
+.comparisons {
+	background-color: #ffff;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding: 35px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+.active {
+	border: 2px solid navy;
+}
+
+
+
+.summary h2, .visualizations h3, .comparisons h2 {
+	font-family: Georgia;
+	color: navy;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+.visualizations img:hover, .comparisons img:hover{
+	border: 2px solid navy;
+}
+
+.tempHover {
+	position: relative;
+	display: inline-block;
+}
+
+.tempHover .vizTop{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.tempHover:hover .vizTop{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.humHover {
+	position: relative;
+	display: inline-block;
+}
+
+.humHover .vizTop2{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.humHover:hover .vizTop2{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.cloudHover {
+	position: relative;
+	display: inline-block;
+}
+
+.cloudHover .vizTop3{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.cloudHover:hover .vizTop3{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.windHover {
+	position: relative;
+	display: inline-block;
+}
+
+.windHover .vizTop4{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.windHover:hover .vizTop4{
+	display: inline;
+	opacity: 0.80;
+
+}
+.compImg{
+	height: auto;
+	width: 550px;
+}
+
+
+#footer {
+	background-color: navy;
+	height: 56px;
+	margin: 0;
+}
+
+.panel-footer {
+	background-color: #6b6b6b;
+	color: #ffff;
+	text-align: center;
+	padding: 15px;
+}
+
+
+@media (max-width: 200px) {
+.landingImage{
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.summary, .comparisons {
+	margin: 35px;
+	margin-top: 30px;
+}
+
+.visualizations {
+	margin: 35px;
+	margin-bottom: 75px;
+	background-color: #ffff;
+}
+
+.vizThumb{
+	width: 130px;
+	height: 130px;
+}
+}
+
+@media (max-width: 480px) {
+.navbar-header {
+	padding-left: 5px;
+}
+
+.landingImage{
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.summary, .comparisons {
+	background-color: #ffff;
+	margin: 35px;
+	margin-top: 30px;
+	padding:none;
+}
+
+.visualizations {
+	margin: 35px;
+	margin-bottom: 75px;
+	background-color: #ffff;
+}
+
+.vizImages {
+	width: 250px;
+	height: auto;
+}
+
+.compImg {
+	width: 200px;
+	height: auto;
+}
+}

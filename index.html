@@ -1,20 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lattitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css">
 </head>
-<body>
-    <h1>Matt Crosetti</h1>
-    <h3>Aspiring Developer</h3>
-    <br>
-    <hr>
-    <br>
-    <h3>Community Outreach Coordinator @ Pet Food Express Headquarters</h3>
-    <h5>- created new tracking system for MyMutt program</h5>
-    <h5>- created inventory app for technicians to track parts in real time</h5>
-    <h5>- responsible for providing support for events to all 63 stores in California</h5>
-    <br>
-    <a href="https://mtcrosetti.github.io/Resume/">Link to My Resume</a>
+<body> 
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="LATIMG2.jpg"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="padding-top:65px">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" style="margin-left: 5px" href="#">Plots<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="VIZpages/maxTemp.html">Max Temperature</a></li>
+                                <li><a href="VIZpages/humidity.html">Humidity </a></li>
+                                <li><a href="VIZpages/cloudiness.html">Cloudiness</a></li>
+                                <li><a href="VIZpages/windspeed.html">Wind Speed</a></li>
+                            </ul>
+                    </li>
+                    <li><a style="margin-left: 5px" href="VIZpages/comparisons.html">Comparisons</a></li>
+                    <li><a style="margin-left: 5px" href="VIZpages/data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <div class="row" style="background-color: lightgray">
+            <div class="col-md-8 col-sm-4">
+                <div class="panel panel-default summary">
+                    <div class="panel-body">
+                        <h2>Summary: Latitude vs. X</h2>
+                        <hr>
+                        <p> 
+                            <div class="col-md-12">
+                            <img src="assets/images/Fig1.png" class="landingImage img-responsive" height=165 width=240>
+                            <p class="summaryParagraph">
+                                The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
+                                on over 500 cities.
+                            </p>
+                            <br>
+                            <p class="summaryParagraph">
+                                After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs. latitude. 
+                                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides 
+                                the source data and visualizations created as part of the analysis, as well as explanations and descriptions 
+                                of any trends and correlations witnessed.
+                            </p>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="panel panel-default visualizations">
+                    <div class="panel-body">
+                        <h3>Visualizations</h3>
+                        <hr>
+                        <div class="tempHover">
+                            <a href="VIZpages/maxTemp.html"><img src="assets/images/Fig1.png" class="vizThumb"></a>
+                            <a href="VIZpages/maxTemp.html" class="vizTop"><img src="thumbnails/tempThumb1.png" class="vizThumb"></a>
+                        </div>
+                        <div class="humHover">
+                            <a href="VIZpages/humidity.html"><img src="assets/images/Fig2.png" class="vizThumb"></a>
+                            <a href="VIZpages/humidity.html" class="vizTop2"><img src="thumbnails/humThumb1.png" class="vizThumb"></a>
+                        </div>
+                        <div class="cloudHover">
+                            <a href="VIZpages/cloudiness.html"><img src="assets/images/Fig3.png" class="vizThumb"></a>
+                            <a href="VIZpages/cloudiness.html" class="vizTop3"><img src="thumbnails/cloudThumb1.png" class="vizThumb"></a>
+                        </div>
+                        <div class="windHover">
+                            <a href="VIZpages/windspeed.html"><img src="assets/images/Fig4.png" class="vizThumb"></a>
+                            <a href="VIZpages/windspeed.html" class="vizTop4"><img src="thumbnails/windThumb1.png" class="vizThumb"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-default" id="footer">
+                        <div class="panel-footer">© Copyright Coding Bootcamp 2018</div>
+                    </div>
+                </div>
+            </div>
+    
 </body>
 </html>
